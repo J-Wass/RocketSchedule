@@ -1,0 +1,31 @@
+@media only screen and (min-width: 1500px) {
+  #leagues .navbar{
+    padding: 0 10rem;
+    background-color: #eaecef !important;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  #leagues .navbar {
+    padding: 0 0rem;
+    background-color: #eaecef !important;
+  }
+}
+
+li.active{
+  background-color:#d3d3d3
+}
+
+a.navbar-title{
+  background:#000;
+  transform:skew(-30deg);
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 40px;
+  box-shadow: 20px 0 #514f4f, -20px 0 #514f4f;
+}
+
+a.navbar-title div#title-text{
+  transform:skew(30deg)
+}
