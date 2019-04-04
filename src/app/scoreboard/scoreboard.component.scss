@@ -1,12 +1,32 @@
+$scoreboard-color: #a5a6a7;
+
 #scoreboard{
   background-color:white;
   height: 75px;
+  border-right: 1px solid $scoreboard-color;
+  overflow:hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  width: calc(100% - 80px);
+  float:right;
+}
+
+button{
+  vertical-align: top;
+  height: 75px;
+  border-radius:0;
+  background-color: lightgrey;
+  border: 1px solid $scoreboard-color
+}
+button:focus{
+  box-shadow: none;
 }
 
 span.score_item{
   display:inline;
-  border:1px solid grey;
+  border-left: 1px solid $scoreboard-color;
   display:inline-block;
   height: 75px;
   width:150px;
+  padding-left: 5px;
 }

@@ -1,20 +1,20 @@
-{{record.league}}
+<div class="scorecard-league">{{record.league}}</div>
 <table>
   <tbody>
-    <tr>
+    <tr [ngClass]="{'winner' : isWinner(record.teams[0])}">
       <td>
         {{record.teams[0]}}
       </td>
-      <td>
-        {{record.score[0]}}
+      <td class='score'>
+        <span>{{record.score[0]}}</span>
       </td>
     </tr>
-    <tr>
+    <tr [ngClass]="{'winner' : isWinner(record.teams[1])}">
       <td>
         {{record.teams[1]}}
       </td>
-      <td>
-        {{record.score[1]}}
+      <td class='score'>
+        <span>{{record.score[1]}}</span>
       </td>
     </tr>
   </tbody>

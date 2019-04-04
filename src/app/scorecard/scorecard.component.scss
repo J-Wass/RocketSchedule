@@ -1,10 +1,29 @@
-table td{
+table tr td{
   font-size: 12px;
+  font-weight: bold;
+  color:grey;
+}
+table tr.winner td{
+  color:black;
+}
+table tr td.score{
+  text-align: right;
+}
+table tr td.score:after{
+  margin-right: 9px;
+  content: '';
+}
+table tr.winner td.score:after{
+  margin-right: 0px;
+  content: '◀';
+}
+table tr td span{
+  margin-right: 10px;
 }
 table{
   width: 100%;
 }
-
-.winner{
-  font-weight: bold;
+div.scorecard-league{
+  font-weight:bold;
+  font-style: italic;
 }

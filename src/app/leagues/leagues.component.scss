@@ -1,19 +1,28 @@
+$navbar-color: #5c5a5a;
+
 @media only screen and (min-width: 1500px) {
   #leagues .navbar{
     padding: 0 10rem;
-    background-color: #eaecef !important;
+    background-color: $navbar-color !important;
   }
 }
 
 @media only screen and (max-width: 1500px) {
   #leagues .navbar {
     padding: 0 0rem;
-    background-color: #eaecef !important;
+    background-color: $navbar-color !important;
+  }
+  a.navbar-title{
+    display:none;
   }
 }
 
 li.active{
   background-color:#d3d3d3
+}
+
+div#title-text:hover, #leagues nav .navbar-title:hover{
+  color: white;
 }
 
 a.navbar-title{
@@ -24,8 +33,26 @@ a.navbar-title{
   padding-right: 1rem;
   margin: 0 40px;
   box-shadow: 20px 0 #514f4f, -20px 0 #514f4f;
+  div#title-text{
+    transform:skew(30deg)
+  }
 }
 
-a.navbar-title div#title-text{
-  transform:skew(30deg)
+nav li a{
+  color: #a4a0a0;
+  font-weight: bold;
+}
+nav li a:hover, nav li a:focus{
+  color: white;
+}
+nav li.active{
+  background-color: $navbar-color;
+  a{
+    color: white;
+  }
+}
+
+nav .nav-separator{
+  border-left: 2px solid #a4a0a0;
+  margin: 10px 0;
 }

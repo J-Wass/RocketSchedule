@@ -1,3 +1,7 @@
+<span id="scroll-scoreboard">
+  <button type="button" (click)="left()" class="btn btn-outline-dark"><</button>
+  <button type="button" (click)="right()"  class="btn btn-outline-dark">></button>
+</span>
 <div id="scoreboard">
   <span class='score_item' *ngFor="let sc of recent_scores">
     <app-scorecard [record] = "sc"></app-scorecard>

@@ -2,5 +2,8 @@
 body{
   height: 100vh;
   width: 100vw;
-  background-color: lightgrey !important;
+  background-color: #e7e7e7 !important
+}
+.navbar-light .navbar-toggler span{
+  color: white !important;
 }

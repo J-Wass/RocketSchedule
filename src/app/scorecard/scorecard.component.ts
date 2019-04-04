@@ -12,4 +12,10 @@ export class ScorecardComponent implements OnInit {
   ngOnInit() {
   }
   @Input() record: Object
+
+  isWinner = (team) => {
+    return this.record['winner'] == team;
+  }
 }
+
+export default ScorecardComponent
